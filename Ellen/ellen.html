@@ -38,6 +38,7 @@
                  width: 100%;
                  position: fixed;
                  top: 0;
+				 z-index: 10;
              }
              .border {
                 padding-top: 100px;
@@ -87,7 +88,10 @@
                     <h3>BLAH</h3>
                 </div>
             </div>
-        </div>
+			<div class = "border">
+				<canvas id="myCanvas" width="500" height="600" style="border: 1px solid black">Your browser does not support the HTML 5 Canvas. </canvas> 
+			</div>
+		</div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
