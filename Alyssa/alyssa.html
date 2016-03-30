@@ -1,7 +1,8 @@
-
 <!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html>
 	<head>
+	    <script src="jquery-1.12.0.min.js"></script>
+
 		<title>GWC CPL: Alyssa</title>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<style>			
@@ -9,7 +10,7 @@
 				background-color: white;
 			}
 			
-			h3 {
+			h3 { /*editing header*/
 				color: white;
 				text-align: left;
 				left: 30px;
@@ -17,7 +18,7 @@
 				position: relative;
 			}
 			
-			#header {
+			#header { /*editing header box*/
 				background-color: black;
 				position: fixed;
 				width: 2400px;
@@ -28,14 +29,14 @@
 				z-index: 1;
 			}
 			
-			#headerTag {
+			#headerTag { /*editing second header (subtitle)*/
 				color: white;
 				font-family: Verdana, Helvetica, sans-serif;
 				position: relative;
 				left: 30px;
 			}
 			
-			#head {
+			#head { /*editing header on actual page*/
 				margin-top: 120px;
 				color: 0a4281;
 				text-shadow: -1px 1px 1px #99FFE6;
@@ -44,12 +45,12 @@
 				left: 10px;
 			}
 			
-			#pic {
+			#pic { /*editing test pic*/
 				float: right;
 			}
 			
-			.textox {
-			    width: 92%;
+			.textox { /*editing text box*/
+			    width: 92%; /*keeps height and width to % of actual page*/
 			    height: 20%;
 			    font-family: Trebuchet MS;
 				border: inset 2px #9EABAB;
@@ -63,21 +64,39 @@
 				text-align: left;
 				text-transform: capitalize;
 				margin-left: 10px;
+				color: #9C9C9C;
+				
 			}
-			.textox:focus  {
+			.textox:focus  { /*text box when hovering/clicked*/
 				box-shadow: inset 0px 1px 2px 0px #9C9C9C;
 			}
 
-			#descrip {
+			#descrip { /*editing description*/
 				font-family: Verdana, Helvetica, sans-serif;
 				left: 10px;
+				padding-bottom: 15px;
 			}
 			
-			p {
+			p { /*editing text*/
 				position: relative;
 				font-family: Verdana, Helvetica, sans-serif;
 				left: 20px;
 				color: #5B5B5B;
+			}
+			
+			button {
+                margin-left: 10px;
+                margin-top: 10px;
+                background-color: #9DD6D6;
+                border-color: grey;
+                font-family: Verdana, Helvetica, sans-serif;
+                font-size: 25; 
+                color: #9C9C9C;
+			}
+			
+			button:hover {
+			    color: black;
+			    box-shadow: inset 0px 1px 2px 0px #9C9C9C;
 			}
 			
 		</style>
@@ -85,22 +104,39 @@
 	
 	<body>
 		<div id=header>
-			<h3>Welcome to ?</h3>
+			<h3>Welcome to Blank</h3>
 			<h5 id=headerTag>Alyssa's Page</h5>
 		</div>
 		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+		    
+		    function clearContents(element) {
+                element.value = '';
+            }
+            
+		    $("div").on("click", "button", function(e) {
+                e.preventDefault();
+                $(this).parent().remove();
+            });
+        </script>
+
 		<!--inserting pics <img id=pic src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">-->
 		
-		<p id=head>Header</p>
-		<p id=descrip>Descrip</p>
+		<p id=head>About Blank</p>
+		<p id=descrip>Need a place to vent? Jot down your thoughts in the box below, and when you're finished, delete it all by pressing the X.</p>
+		
+        <div>
 		
 		<form>
-			<textarea name="myTextBox" cols="50" rows="5" class="textox">
-			Scribble and Fizzle!
-			</textarea>
+		    <label for="explanation"></label>
+			<textarea name="explanation" id="explanation" cols="50" rows="5" class="textox"> Write </textarea>
 		</form>	
+		
+		<button>X</button>
+		
+		</div>
 		
 	</body>
 </html>
 
-<!--Welcome to Fizzle, a place to write and delete. Alyssa, March 9, 2016-->
+<!--Welcome to Blank, a place to write and delete. Alyssa, March 30, 2016-->
