@@ -108,12 +108,10 @@
 			<h5 id=headerTag>Alyssa's Page</h5>
 		</div>
 		
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-		    
-		    function clearContents(element) {
-                element.value = '';
-            }
-            
+        <script >	    
+		    function clear(){
+                 document.getElementById('textBox').value = "";
+            };
         </script>
 
 		<!--inserting pics <img id=pic src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">-->
@@ -121,12 +119,11 @@
 		<p id=head>About Blank</p>
 		<p id=descrip>Need a place to vent? Jot down your thoughts in the box below, and when you're finished, delete it all by pressing the X.</p>
 		
-		
 		<form>
-			<textarea name="explanation" id="explanation" cols="50" rows="5" class="textox"></textarea>
+			<textarea id="textBox" cols="50" rows="5" class="textox">?</textarea>
 		</form>	
 		
-		<button>X</button>
+		<button onClick="clear();"> X </button>
 		
 	</body>
 </html>
