@@ -114,10 +114,6 @@
                 element.value = '';
             }
             
-		    $("div").on("click", "button", function(e) {
-                e.preventDefault();
-                $(this).parent().remove();
-            });
         </script>
 
 		<!--inserting pics <img id=pic src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">-->
@@ -125,16 +121,12 @@
 		<p id=head>About Blank</p>
 		<p id=descrip>Need a place to vent? Jot down your thoughts in the box below, and when you're finished, delete it all by pressing the X.</p>
 		
-        <div>
 		
 		<form>
-		    <label for="explanation"></label>
-			<textarea name="explanation" id="explanation" cols="50" rows="5" class="textox"> Write </textarea>
+			<textarea name="explanation" id="explanation" cols="50" rows="5" class="textox"></textarea>
 		</form>	
 		
 		<button>X</button>
-		
-		</div>
 		
 	</body>
 </html>
