@@ -29,37 +29,8 @@ font-size: 20px;
 
 <h3>here are the rules for the game below! move the paw around and try to catch the ball,<br> But you have to keep the mouse moving at all times! <br> Have fun!</h3>
 
-<canvas id = "catCanvas" width = "400" height =  "400" style = "border: 1px solid #c3c3c3;"> </canvas> 
-
-<script>
-var c = document.getElementById("catCanvas"); 
-var ctx = c.getContext("2d"); 
-draw= function() {
-    
-
-     
-ctx.background(0, 255, 13);
-
-ctx.ellipse(x ,y,20,20); 
+<script src="https://www.khanacademy.org/computer-programming/yarn-ball/3501844111/embed.js?editor=yes&amp;buttons=yes&amp;author=yes&amp;embed=yes"></script> 
 
 
-  if ( x < 401 && x > 10) {
-        
-        
-       x += -2; 
-    } 
-    
-if( x === 10 && y > 1 && y < 400 ) {
-     
-     
-     y += 2;
- }
- 
- 
-if ( y === 400 && x > 0 && x < 400 ){
- 
- x = x + 4; 
- 
- }</script> 
 </body>
 </html>
