@@ -2,6 +2,7 @@
 <html>
 	<head>
 	    <script src="jquery-1.12.0.min.js"></script>
+        <script src="processing.js"></script>
 
 		<title>GWC CPL: Alyssa</title>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -37,7 +38,7 @@
 			}
 			
 			#head { /*editing header on actual page*/
-				margin-top: 120px;
+				margin-top: 180px;
 				color: 0a4281;
 				text-shadow: -1px 1px 1px #99FFE6;
 				font-family: Verdana, Helvetica, sans-serif;
@@ -100,12 +101,11 @@
 			}
 			
 			#home {
-			    background-color: red;
-			    margin-right: 30px;
-			    font-size: 16;
-			    float: right;
-			    z-index: 2;
-			}
+                font-size: 16;
+                margin-left: 30px;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
 			
 		</style>
 	</head>
@@ -121,7 +121,7 @@
             }
             
             //going home
-		    function return(){
+		    function goHome(){
 		        confirm("Are you sure you want to leave?");
                 window.location.href = 'index.html';
             }
@@ -129,9 +129,9 @@
         </script>
         
         <div id=header>
-			<h3>Welcome to Blank <button id="home" onClick="return();">HOME</button> <!--home button--> </h3>
+			<h3>Welcome to Blank  </h3>
 			<h5 id=headerTag>Alyssa's Page</h5>
-			
+			<button id="home" onClick="goHome();">HOME</button> <!--home button-->
 		</div>
 		
 		<p id=head>About Blank</p>
