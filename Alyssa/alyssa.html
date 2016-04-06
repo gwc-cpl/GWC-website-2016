@@ -99,16 +99,20 @@
 			    box-shadow: inset 0px 1px 2px 0px #9C9C9C;
 			}
 			
+			#home {
+			    background-color: red;
+			    margin-right: 30px;
+			    font-size: 16;
+			    float: right;
+			    z-index: 2;
+			}
+			
 		</style>
 	</head>
 	
 	<body>
-		<div id=header>
-			<h3>Welcome to Blank</h3>
-			<h5 id=headerTag>Alyssa's Page</h5>
-		</div>
-		
-        <script type="text/javascript">	
+		 
+		 <script type="text/javascript">	
 
             //clearing the textbox
 		    function clearBox(){
@@ -116,16 +120,28 @@
                 document.getElementById('textBox').value = "";
             }
             
+            //going home
+		    function return(){
+		        confirm("Are you sure you want to leave?");
+                window.location.href = 'index.html';
+            }
+            
         </script>
-
+        
+        <div id=header>
+			<h3>Welcome to Blank <button id="home" onClick="return();">HOME</button> <!--home button--> </h3>
+			<h5 id=headerTag>Alyssa's Page</h5>
+			
+		</div>
+		
 		<p id=head>About Blank</p>
 		<p id=descrip>Need a place to vent? Jot down your thoughts in the box below, and when you're finished, delete it all by pressing the X.</p>
 		
-		<form>
+		<form> <!--making textbox-->
 			<textarea id="textBox" cols="50" rows="5" class="textox" placeholder="Jot it down..."></textarea>
 		</form>	
 		
-		<button onClick="clearBox();"> X </button>
+		<button onClick="clearBox();"> X </button> <!--delete button-->
 		
 	</body>
 </html>
