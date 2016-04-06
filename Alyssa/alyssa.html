@@ -91,7 +91,7 @@
                 border-color: grey;
                 font-family: Verdana, Helvetica, sans-serif;
                 font-size: 25; 
-                color: #077681;
+                color: #FFFFFF;
 			}
 			
 			button:hover {
@@ -112,7 +112,8 @@
 
             //clearing the textbox
 		    function clearBox(){
-                 document.getElementById('textBox').value = "";
+		        confirm("Are you sure you want to clear?");
+                document.getElementById('textBox').value = "";
             }
             
         </script>
@@ -123,7 +124,7 @@
 		<p id=descrip>Need a place to vent? Jot down your thoughts in the box below, and when you're finished, delete it all by pressing the X.</p>
 		
 		<form>
-			<textarea id="textBox" cols="50" rows="5" class="textox">?</textarea>
+			<textarea id="textBox" cols="50" rows="5" class="textox"></textarea>
 		</form>	
 		
 		<button onClick="clearBox();"> X </button>
