@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+background-color: 	#FCEF62;
+}
+h1{
+color: #F20E1F;
+text-align: center;
+font-family: 'Source Sans Pro', sans-serif;
+}
+h3,h4{
+color: #F20E1F;
+font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+color: green;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 20px;
+}
+div {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+table{
+  border: 0px;
+}
+td, th{
+  border: 0px;
+}
