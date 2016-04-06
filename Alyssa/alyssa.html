@@ -116,14 +116,18 @@
 
             //clearing the textbox
 		    function clearBox(){
-		        confirm("Are you sure you want to clear?");
-                document.getElementById('textBox').value = "";
+		        var cB = confirm("Are you sure you want to clear?");
+		        if (cB == true) {
+                    document.getElementById('textBox').value = "";
+		        } 
             }
             
             //going home
 		    function goHome(){
-		        confirm("Are you sure you want to leave?");
-                window.location.href = 'http://gwc-cpl.github.io/GWC-website-2016/';
+		        var gH = confirm("Are you sure you want to leave?");
+                if (gH == true) {
+                    window.location.href = 'http://gwc-cpl.github.io/GWC-website-2016/';
+                }
             }
             
         </script>
