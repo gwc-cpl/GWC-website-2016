@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GWC CPL</title>
+<style>
+
+body {
+background-color: #ccffeb;
+
+}
+h2 {
+color:  #359;
+line-height:0.4;
+font-family: "arial";
+text-align: center;
+font-size: 56px;
+}
+h6 {
+color:  #259;
+line-height:2.0;
+font-family: "arial";
+text-align: center;
+font-size: 26px;
+
+}
+p {
+color:  #ff1aff;
+line-height:1.6;
+font-family: "arial";
+font-size: 16px;
+margin:52px 90px;
+}
+ul {
+color:  #ff1aff;
+text-align: center;
+font-family: "arial";
+font-size: 18px;
+margin:52px 90px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Welcone</h2>
+<h2>to</h2>
+<h2>Diagon Alley</h2>
+<h6>A guide for very desperate muggles...</h6>
+<p>How to I get to Diagon Alley?</p>
+<p>Mix 1 gram of chcolate syrup with 2000 ml of peanut butter. Then pour 1/5 liter of chocolate milk into the mixture. After mixing vigorously for 2 hours with a flip phone, boil the mixture. After it is boiled, make another mixture with 100 teaspoons of citric acid and sodium bicarbonate. Then, you mix it with 493 mL of dihydrogen monoxide. This mixture should fizz and bubble. After waiting 9.434967855e+22 femtoseconds, mix those 2 mixturess together and drink it. Now, you should be able to fly to Diagon Alley with 5714 helium balloons.
+
+<p>What to do in Diagon Alley</p>
+
+     <ul>
+        <li>If you have any children, you must visit knockturn alley because it is very safe and very child-friendly</li>
+        <li>If you want to rob a bank and get some gold, rob Gringotts!</li>
+        <li>If you are interested in buying good BBQ grills, visit Potage's Cauldron Shop!</li>
+        <li>Want decent brooms? Buy good qualities at Quality Quidditch Supplies! Want a discount code? Mention "I love Voldermort!"</li>
+    </ul>     
+</body>
+</html>
